@@ -1,5 +1,5 @@
 {
-  "name": "array-object-deep-copy",
+  "name": "simple-deep-copy",
   "version": "0.0.0",
   "description": "Deep copy objects and arrays",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/carlmungazi/array-object-deep-copy.git"
+    "url": "git+https://github.com/carlmungazi/simple-deep-copy.git"
   },
   "keywords": [
     "array",
@@ -19,9 +19,9 @@
   "author": "Carl Mungazi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/carlmungazi/array-object-deep-copy/issues"
+    "url": "https://github.com/carlmungazi/simple-deep-copy/issues"
   },
-  "homepage": "https://github.com/carlmungazi/array-object-deep-copy#readme",
+  "homepage": "https://github.com/carlmungazi/simple-deep-copy#readme",
   "devDependencies": {
     "ava": "1.0.0-rc.2"
   }

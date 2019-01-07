@@ -1,5 +1,5 @@
 import test from 'ava';
-import arrObjDeepCopy from '.';
+import simpleDeepCopy from '.';
 
 test('it creates a deep copy', t => {
   const originalArray = [
@@ -7,7 +7,7 @@ test('it creates a deep copy', t => {
     { lang: "Elm" },
     { lang: "Rust" }
   ];
-  const newArray = arrObjDeepCopy(originalArray);
+  const newArray = simpleDeepCopy(originalArray);
 
   t.deepEqual(originalArray, newArray);
 });
@@ -18,7 +18,7 @@ test('it does not change values in the original array', t => {
     { lang: "Elm" },
     { lang: "Rust" }
   ];
-  const newArray = arrObjDeepCopy(originalArray);
+  const newArray = simpleDeepCopy(originalArray);
   
   newArray[1].lang = "Elixir"; 
 
@@ -27,7 +27,7 @@ test('it does not change values in the original array', t => {
 
 test('it does not change values in the original object', t => {
   const originalObject = { lang: "JavaScript" };
-  const newObject = arrObjDeepCopy(originalObject);
+  const newObject = simpleDeepCopy(originalObject);
   
   newObject.lang = "Elixir";  
 
